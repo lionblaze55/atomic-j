@@ -7,4 +7,3 @@ set -oue pipefail
 
 echo "Uninstalling all Flatpaks and deleting data..."
 flatpak uninstall --all --delete-data -y
-rm -rf /var/lib/flatpak ~/.var/app ~/.local/share/flatpak ~/.cache/flatpak ~/.config/flatpak
