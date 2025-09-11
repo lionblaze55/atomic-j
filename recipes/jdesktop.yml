@@ -37,7 +37,7 @@ modules:
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         # Configure the Flathub repository
-        repo: https://dl.flathub.org/repo/flathub.flatpakrepo
+        repo: dl.flathub.org/repo/flathub.flatpakrepo
         scope: system
         # If no repo information is specified, Flathub will be used by default
       - scope: user # Also add Flathub user repo, but no user packages
