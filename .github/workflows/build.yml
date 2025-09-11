@@ -27,7 +27,7 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - recipe.yml
+          #- recipe.yml
           - jdesktop.yml
           - jlaptop.yml
           - jtv.yml
