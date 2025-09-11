@@ -4,3 +4,15 @@ modules:
       packages:
         - bemenu
         - grimshot
+
+  - type: default-flatpaks
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        # Configure the Flathub repository
+        repo:
+          url: "dl.flathub.org/repo/flathub.flatpakrepo" # URL to your .flatpakrepo file
+          name: flathub
+          title: Flathub
+        scope: user # Also add Flathub user repo, but no user packages
+        install:
+          - org.gnome.Logs
