@@ -17,6 +17,9 @@ modules:
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - toolbox
 
+  - type: flatpakclear
+    option: true
+
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
