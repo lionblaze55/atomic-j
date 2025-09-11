@@ -28,6 +28,11 @@ jobs:
         recipe:
           # !! Add your recipes here
           - recipe.yml
+          - jdesktop.yml
+          - jlaptop.yml
+          - jtv.yml
+          - edesktop.yml
+          - elaptop.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
