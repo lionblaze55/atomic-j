@@ -3,3 +3,4 @@ modules:
     install:
       packages:
         - bemenu
+        - grimshot
