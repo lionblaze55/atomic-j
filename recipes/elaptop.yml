@@ -3,11 +3,11 @@
 # image will be published to ghcr.io/<user>/<name>
 name: atomic-elaptop
 # description will be included in the image's metadata
-description: OS image for wife laptop.
+description: This is my personal OS image for wife laptop.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/repository/fedora-ostree-desktops/kinoite
-image-version: latest # latest is also supported if you want new updates ASAP
+base-image: quay.io/fedora-ostree-desktops/kinoite
+image-version: 42 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -18,9 +18,6 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    repos:
-#      copr:
-#        - atim/starship
     install:
       packages:
         - gnome-disk-utility
@@ -37,10 +34,11 @@ modules:
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         # Configure the Flathub repository
-        repo: https://dl.flathub.org/repo/flathub.flatpakrepo
-        scope: system
-        # If no repo information is specified, Flathub will be used by default
-      - scope: user # Also add Flathub user repo, but no user packages
+        repo:
+          url: "dl.flathub.org/repo/flathub.flatpakrepo" # URL to your .flatpakrepo file
+          name: flathub
+          title: Flathub
+        scope: user # Also add Flathub user repo, but no user packages
         install:
           - com.stremio.Stremio
           - io.mpv.Mpv
