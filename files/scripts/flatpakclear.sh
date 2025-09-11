@@ -6,4 +6,4 @@
 set -oue pipefail
 
 echo "Uninstalling all Flatpaks and deleting data..."
-flatpak uninstall --all --delete-data -y
+flatpak uninstall --all -y
