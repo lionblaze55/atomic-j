@@ -6,7 +6,7 @@ name: atomic-jdesktop
 description: This is my personal OS image for my primary workstation.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/repository/fedora-ostree-desktops/sway-atomic
+base-image: quay.io/fedora-ostree-desktops/sway-atomic
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
