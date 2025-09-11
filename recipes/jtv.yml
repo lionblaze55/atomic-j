@@ -1,13 +1,13 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: atomic-jdesktop
+name: atomic-jtv
 # description will be included in the image's metadata
-description: This is my personal OS image for my primary workstation.
+description: Userfriendly OS image for TV boxes.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: quay.io/repository/fedora-ostree-desktops/kinoite
+image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -24,8 +24,6 @@ modules:
     install:
       packages:
         - gnome-disk-utility
-        - virt-manager
-        - waybar
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -36,10 +34,14 @@ modules:
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
+        # Configure the Flathub repository
+        repo: https://dl.flathub.org/repo/flathub.flatpakrepo
         scope: system
         # If no repo information is specified, Flathub will be used by default
       - scope: user # Also add Flathub user repo, but no user packages
         install:
-          - org.mozilla.firefox
-          - org.gnome.Loupe
+          - com.stremio.Stremio
+          - io.mpv.Mpv
+          - com.brave.Browser
+          - org.signal.Signal
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
