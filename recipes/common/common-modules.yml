@@ -19,11 +19,7 @@ modules:
 
   - type: script
     scripts:
-      - |
-        #!/usr/bin/env bash
-        echo "Uninstalling all Flatpaks and deleting data..."
-        flatpak uninstall --all --delete-data -y
-        rm -rf ~/.var/app ~/.local/share/flatpak ~/.cache/flatpak ~/.config/flatpak
+      - flatpakclear.sh
 
   - type: default-flatpaks
     configurations:
