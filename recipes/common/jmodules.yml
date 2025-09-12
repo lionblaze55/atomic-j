@@ -2,8 +2,12 @@ modules:
   - type: dnf
     install:
       packages:
-        - bemenu
+        - fuzzel
         - grimshot
+    remove:
+      packages:
+        - dmenu
+        - sddm
 
   - type: default-flatpaks
     configurations:
