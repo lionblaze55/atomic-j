@@ -11,6 +11,7 @@ modules:
         - distrobox
         - htop
         - stow
+        - vim
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
