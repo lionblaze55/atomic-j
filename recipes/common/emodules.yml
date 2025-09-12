@@ -18,4 +18,5 @@ modules:
           - org.kde.ark
           - org.kde.gwenview
           - com.logseq.Logseq
-
+          - com.usebottles.bottles
+          - org.kde.haruna
