@@ -19,3 +19,4 @@ modules:
         install:
           - org.gnome.Logs
           - com.logseq.Logseq
+          - org.audacityteam.Audacity
