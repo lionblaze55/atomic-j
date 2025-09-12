@@ -3,11 +3,6 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  - type: os-release
-    properties:
-      ID: blue_build
-      NAME: BlueBuild
-      PRETTY_NAME: BlueBuild Image
 
   - type: dnf
     install:
@@ -15,6 +10,7 @@ modules:
         - gnome-disk-utility
         - distrobox
         - htop
+        - stow
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
