@@ -7,4 +7,4 @@ set -oue pipefail
 
 echo "Uninstalling all Flatpaks and deleting data..."
 flatpak uninstall --all -y
-flatpak remote-delete fedora
+#flatpak remote-delete fedora
