@@ -18,3 +18,4 @@ modules:
         # Configure the Flathub repository
         install:
           - org.gnome.Logs
+          - com.logseq.Logseq
