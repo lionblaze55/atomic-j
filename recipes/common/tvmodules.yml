@@ -6,7 +6,6 @@ modules:
         - gnome-disk-utility
         - distrobox
         - htop
-        - stow
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -29,5 +28,6 @@ modules:
           - org.signal.Signal
           - com.github.tchx84.Flatseal
           - io.github.flattool.Warehouse
+          - com.protonvpn.www
           
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
