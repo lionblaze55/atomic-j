@@ -38,6 +38,7 @@ modules:
           - org.kde.kate
           - org.gnome.Logs
           - com.usebottles.bottles
-          - com.logseq.Logseq          
+          - com.logseq.Logseq
+          - com.discordapp.Discord
           
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
