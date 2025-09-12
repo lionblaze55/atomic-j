@@ -12,5 +12,4 @@ modules:
           - org.darktable.Darktable
           - org.onlyoffice.desktopeditors
           - org.kde.ark
-          - org.kde.gwenview
           - org.kde.haruna
