@@ -6,7 +6,6 @@ modules:
         - grimshot
     remove:
       packages:
-        - rofi
         - sddm
 
   - type: default-flatpaks
