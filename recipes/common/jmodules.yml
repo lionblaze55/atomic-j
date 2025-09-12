@@ -17,7 +17,6 @@ modules:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         # Configure the Flathub repository
         install:
-          - org.gnome.Logs
           - com.logseq.Logseq
           - org.audacityteam.Audacity
           - org.virt_manager.virt-manager

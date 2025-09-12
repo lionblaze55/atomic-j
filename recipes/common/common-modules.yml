@@ -35,5 +35,6 @@ modules:
           - com.github.tchx84.Flatseal
           - io.github.flattool.Warehouse
           - org.kde.kate
+          - org.gnome.Logs
           
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
