@@ -17,10 +17,6 @@ modules:
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - toolbox
 
-  - type: script
-    scripts:
-      - flatpakclear.sh
-
   - type: default-flatpaks
     configurations:
       - scope: user
