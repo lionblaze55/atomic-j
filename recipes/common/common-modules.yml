@@ -14,6 +14,7 @@ modules:
       packages:
         - gnome-disk-utility
         - distrobox
+        - htop
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
