@@ -6,7 +6,7 @@ modules:
         - grimshot
     remove:
       packages:
-        - dmenu
+        - rofi
         - sddm
 
   - type: default-flatpaks
