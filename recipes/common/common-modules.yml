@@ -28,19 +28,20 @@ modules:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         # Configure the Flathub repository
         install:
-          - com.stremio.Stremio
-          - io.mpv.Mpv
-          - com.brave.Browser
-          - org.signal.Signal
-          - com.valvesoftware.Steam
-          - com.github.tchx84.Flatseal
-          - io.github.flattool.Warehouse
-          - org.kde.kate
-          - org.gnome.Logs
-          - com.usebottles.bottles
-          - com.logseq.Logseq
-          - com.discordapp.Discord
-          - net.davidotek.pupgui2
-          - org.kde.gwenview
+          - com.stremio.Stremio               # Stremio
+          - io.mpv.Mpv                        # MPV
+          - com.brave.Browser                 # Brave Browser
+          - com.github.tchx84.Flatseal        # Flatseal
+          - org.kde.gwenview                  # Gwenview
+          - org.keepassxc.KeePassXC           # KeepassXC
+          - org.signal.Signal                 # Signal
+          - com.valvesoftware.Steam           # Steam
+          - io.github.flattool.Warehouse      # Warehouse
+          - org.kde.kate                      # Kate
+          - org.gnome.Logs                    # Krita
+          - com.usebottles.bottles            # Bottles
+          - com.logseq.Logseq                 # Logseq
+          - com.discordapp.Discord            # Discord
+          - net.davidotek.pupgui2             # ProtonUp-QT
           
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
